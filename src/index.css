@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #09090b;
+  color: #e4e4e7;
+  font-family: 'Bricolage Grotesque', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a45;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* 选中文本配色 */
+::selection {
+  background-color: rgba(16, 217, 133, 0.25);
+  color: #ffffff;
+}
+
+@layer components {
+  /* 背景氛围层：深空 + emerald 生物发光 */
+  .bg-atmosphere {
+    background-color: #09090b;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(16, 217, 133, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(20, 184, 166, 0.07) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(56, 189, 248, 0.05) 0px, transparent 50%);
+  }
+
+  /* 细微噪点纹理 */
+  .grain::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E");
+  }
+
+  /* 卡片基础样式 */
+  .card-base {
+    @apply relative bg-bg-card/80 backdrop-blur-sm border border-border-subtle rounded-xl shadow-card transition-all duration-200;
+  }
+
+  /* 按钮基础 */
+  .btn-base {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-accent-emerald/60 focus:ring-offset-2 focus:ring-offset-bg-deep disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn-base bg-accent-emerald text-bg-deep hover:bg-accent-emerald/90 hover:shadow-glow;
+  }
+  .btn-secondary {
+    @apply btn-base bg-bg-elevated text-zinc-200 border border-border-default hover:bg-bg-hover hover:border-accent-emerald/50;
+  }
+  .btn-ghost {
+    @apply btn-base text-zinc-400 hover:text-zinc-100 hover:bg-bg-hover;
+  }
+
+  /* 输入框基础 */
+  .input-base {
+    @apply w-full bg-bg-deep/60 border border-border-default rounded-lg px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-600 transition-colors focus:outline-none focus:border-accent-emerald/60 focus:ring-1 focus:ring-accent-emerald/40;
+  }
+
+  /* 代码块 / SKILL.md 预览 */
+  .code-block {
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    font-size: 12.5px;
+    line-height: 1.65;
+    white-space: pre;
+    tab-size: 2;
+  }
+}
