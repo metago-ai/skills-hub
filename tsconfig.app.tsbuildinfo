@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/contributeguide.tsx","./src/components/header.tsx","./src/components/skillcard.tsx","./src/components/skilldetail.tsx","./src/components/skillgrid.tsx","./src/data/skills.ts","./src/types/index.ts"],"version":"6.0.3"}
