@@ -52,6 +52,7 @@ MetaGO 是一套完整的产品矩阵，让 AI 从工具进化为生命体：
 | [Studio](https://gitee.com/metago/metago-studio) | 平台工具 | 可视化技能编排平台 |
 | [Skills SDK](https://gitee.com/metago/skills-sdk) | 生态基础设施 | TypeScript技能开发SDK |
 | **Skills Hub**（本产品） | 生态基础设施 | 技能市场 |
+| [Certify](https://gitee.com/metago/certify) | 生态基础设施 | 技能认证体系（Gold/Silver） |
 
 > 战略规划：[STRATEGY.md](https://gitee.com/metago/metagolifeform/blob/main/docs/STRATEGY.md) · 执行日志：[STRATEGY-EXECUTION-LOG.md](https://gitee.com/metago/metagolifeform/blob/main/docs/STRATEGY-EXECUTION-LOG.md)
 
