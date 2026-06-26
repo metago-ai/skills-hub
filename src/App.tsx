@@ -75,7 +75,7 @@ export default function App() {
               </h1>
               <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
                 26 个元构技能（22 核心 + 4 Dev Kit），一站式浏览、搜索与获取。
-                一键复制 SKILL.md，让 AI 助手升级为元构超级智能生命体。
+                一键复制 SKILL.md，让智能，学会进化。
               </p>
 
               {/* 统计 */}
