@@ -1,4 +1,4 @@
-# MetaGO Skills Hub
+﻿# MetaGO Skills Hub
 
 > 技能市场 — 浏览、搜索、发现 MetaGO 技能
 >
@@ -26,7 +26,7 @@
 
 ```bash
 git clone https://gitee.com/metago/skills-hub.git
-cd metago-skills-hub
+cd skills-hub
 npm install
 npm run dev      # 开发预览
 npm run build    # 生产构建到 dist/
