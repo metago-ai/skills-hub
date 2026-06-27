@@ -6,9 +6,9 @@
   "description": "MetaGO Skills Hub - 技能市场，浏览、搜索、发现 MetaGO 技能",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/metago/metago-skills-hub.git"
+    "url": "https://gitee.com/metago/skills-hub.git"
   },
-  "homepage": "https://gitee.com/metago/metago-skills-hub",
+  "homepage": "https://gitee.com/metago/skills-hub",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
